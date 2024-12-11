@@ -22,9 +22,6 @@ function App() {
           insertionPoint="styles-insertion-point">
           <Router>
             <Switch>
-              <Route path="/app/catalog" component={Test} />
-            </Switch>
-            <Switch>
               <Route path="/" component={Views} />
             </Switch>
           </Router>
@@ -35,7 +32,3 @@ function App() {
 }
 
 export default App;
-
-const Test = () => {
-  return <div style={{ backgroundColor: 'black', width: '300px', height: '300px' }}>asdasd</div>;
-};

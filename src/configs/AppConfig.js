@@ -5,7 +5,7 @@ export const APP_NAME = 'Emilus';
 export const API_BASE_URL = env.API_ENDPOINT_URL;
 export const APP_PREFIX_PATH = '/app';
 export const AUTH_PREFIX_PATH = '/auth';
-export const CATALOG_PREFIX_PATH = '/catalog';
+export const HOME_PREFIX_PATH = '/home';
 
 export const THEME_CONFIG = {
   navCollapsed: false,

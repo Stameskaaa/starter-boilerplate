@@ -5,7 +5,7 @@ import navigationConfig from 'configs/NavigationConfig';
 import IntlMessage from 'components/util-components/IntlMessage';
 
 let breadcrumbData = {
-  '/app': <IntlMessage id="home" />,
+  '/home': <IntlMessage id="home" />,
 };
 
 navigationConfig.forEach((elm, i) => {

@@ -6,7 +6,7 @@ import AuthLayout from 'layouts/auth-layout';
 import AppLocale from 'lang';
 import { IntlProvider } from 'react-intl';
 import { ConfigProvider } from 'antd';
-import { APP_PREFIX_PATH, AUTH_PREFIX_PATH, CATALOG_PREFIX_PATH } from 'configs/AppConfig';
+import { APP_PREFIX_PATH, AUTH_PREFIX_PATH, HOME_PREFIX_PATH } from 'configs/AppConfig';
 
 export const Views = (props) => {
   const { locale, location } = props;
@@ -16,7 +16,7 @@ export const Views = (props) => {
       <ConfigProvider locale={currentAppLocale.antd}>
         <Switch>
           <Route exact path="/">
-            <Redirect to={APP_PREFIX_PATH} />
+            <Redirect to={HOME_PREFIX_PATH} />
           </Route>
           <Route path={AUTH_PREFIX_PATH}>
             <AuthLayout />
@@ -24,7 +24,7 @@ export const Views = (props) => {
           <Route path={APP_PREFIX_PATH}>
             <AppLayout location={location} />
           </Route>
-          <Route path={CATALOG_PREFIX_PATH}>
+          <Route path={HOME_PREFIX_PATH}>
             <AppLayout location={location} />
           </Route>
         </Switch>
