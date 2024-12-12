@@ -26,10 +26,6 @@ class EditProfile extends Component {
     reader.readAsDataURL(img);
   }
 
-  reloadData() {
-    console.log(this.state);
-  }
-
   componentDidMount() {
     if (this.props.location.state) {
       const historyState = this.props.location.state.state.user;
@@ -112,7 +108,6 @@ class EditProfile extends Component {
     return (
       <>
         <Flex alignItems="center" mobileFlex={false} className="text-center text-md-left">
-          <Button onClick={() => this.reloadData()}>ASD</Button>
           <Avatar size={90} src={avatarUrl} icon={<UserOutlined />} />
           <div className="ml-md-3 mt-md-0 mt-3">
             <Upload onChange={onUploadAavater} showUploadList={false} action={this.avatarEndpoint}>
