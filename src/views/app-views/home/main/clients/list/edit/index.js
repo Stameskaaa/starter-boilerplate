@@ -5,6 +5,7 @@ import { ROW_GUTTER } from 'constants/ThemeConstant';
 import Flex from 'components/shared-components/Flex';
 
 class EditProfile extends Component {
+  formRef = React.createRef();
   avatarEndpoint = 'https://www.mocky.io/v2/5cc8019d300000980a055e76';
   state = {
     avatarUrl: '/img/avatars/thumb-6.jpg',
@@ -25,6 +26,10 @@ class EditProfile extends Component {
     reader.readAsDataURL(img);
   }
 
+  reloadData() {
+    console.log(this.state);
+  }
+
   componentDidMount() {
     if (this.props.location.state) {
       const historyState = this.props.location.state.state.user;
@@ -38,8 +43,9 @@ class EditProfile extends Component {
         address: `${historyState.address.street} ${historyState.address.suite}`,
         city: historyState.address.city,
       };
-      console.log(userData);
-      this.setState((prev) => ({ ...userData, ...prev }));
+
+      this.formRef.current.setFieldsValue(userData);
+      this.setState(userData);
     }
   }
 
@@ -103,11 +109,10 @@ class EditProfile extends Component {
       avatarUrl,
     } = this.state;
 
-    console.log(name);
-
     return (
       <>
         <Flex alignItems="center" mobileFlex={false} className="text-center text-md-left">
+          <Button onClick={() => this.reloadData()}>ASD</Button>
           <Avatar size={90} src={avatarUrl} icon={<UserOutlined />} />
           <div className="ml-md-3 mt-md-0 mt-3">
             <Upload onChange={onUploadAavater} showUploadList={false} action={this.avatarEndpoint}>
@@ -120,10 +125,11 @@ class EditProfile extends Component {
         </Flex>
         <div className="mt-4">
           <Form
+            ref={this.formRef}
             name="basicInformation"
             layout="vertical"
             initialValues={{
-              name: name,
+              name: this.state.name,
               email: email,
               username: userName,
               nameOfCompany: nameOfCompany,
