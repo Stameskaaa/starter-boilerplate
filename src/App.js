@@ -12,11 +12,6 @@ const themes = {
   light: `/starter-boilerplate/css/light-theme.css`,
 };
 
-// const themes = {
-//   dark: './css/dark-theme.css',
-//   light: './css/light-theme.css',
-// };
-
 function App() {
   return (
     <div className="App">

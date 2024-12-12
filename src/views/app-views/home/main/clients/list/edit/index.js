@@ -8,7 +8,7 @@ class EditProfile extends Component {
   formRef = React.createRef();
   avatarEndpoint = 'https://www.mocky.io/v2/5cc8019d300000980a055e76';
   state = {
-    avatarUrl: '/img/avatars/thumb-6.jpg',
+    avatarUrl: '/starter-boilerplate/img/avatars/thumb-6.jpg',
     name: 'Charlie Howard',
     email: 'charlie.howard@themenate.com',
     userName: 'Charlie',
@@ -124,7 +124,7 @@ class EditProfile extends Component {
             name="basicInformation"
             layout="vertical"
             initialValues={{
-              name: this.state.name,
+              name: name,
               email: email,
               username: userName,
               nameOfCompany: nameOfCompany,
