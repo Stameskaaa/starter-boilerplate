@@ -1,0 +1,2 @@
+(this.webpackJsonpemilus=this.webpackJsonpemilus||[]).push([[17],{531:function(s,e,i){"use strict";i.r(e);var t=i(5);e.default=()=>Object(t.jsx)("div",{children:"Main page"})}}]);
+//# sourceMappingURL=17.68af894c.chunk.js.map

@@ -1,0 +1,1 @@
+{"version":3,"sources":["views/app-views/home/system/index.js"],"names":["System","_jsx","children"],"mappings":"qHAIeA,UAJAA,IACNC,cAAA,OAAAC,SAAK,e","file":"static/js/18.63eee905.chunk.js","sourcesContent":["const System = () => {\r\n  return <div>System page</div>;\r\n};\r\n\r\nexport default System;\r\n"],"sourceRoot":""}

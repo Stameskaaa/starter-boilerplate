@@ -1,0 +1,1 @@
+{"version":3,"sources":["views/app-views/home/main/index.js"],"names":["Main","_jsx","children"],"mappings":"qHAIeA,UAJFA,IACJC,cAAA,OAAAC,SAAK,a","file":"static/js/17.68af894c.chunk.js","sourcesContent":["const Main = () => {\r\n  return <div>Main page</div>;\r\n};\r\n\r\nexport default Main;\r\n"],"sourceRoot":""}
