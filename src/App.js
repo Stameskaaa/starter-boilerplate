@@ -25,7 +25,7 @@ function App() {
           themeMap={themes}
           defaultTheme={THEME_CONFIG.currentTheme}
           insertionPoint="styles-insertion-point">
-          <Router>
+          <Router basename="starter-boilerplate">
             <Switch>
               <Route path="/" component={Views} />
             </Switch>

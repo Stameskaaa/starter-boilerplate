@@ -63,8 +63,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "concurrently \"npm run start\" \"gulp watch\""
+    "dev": "concurrently \"npm run start\" \"gulp watch\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "https://Stameskaaa.github.io/starter-boilerplate",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -86,6 +89,7 @@
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "autoprefixer": "^9.8.4",
+    "gh-pages": "^6.2.0",
     "gulp": "^4.0.2",
     "gulp-csso": "^4.0.1",
     "gulp-debug": "^4.0.0",
