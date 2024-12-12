@@ -28,6 +28,7 @@ const BreadcrumbRoute = withRouter((props) => {
   const pathSnippets = location.pathname.split('/').filter((i) => i);
   const buildBreadcrumb = pathSnippets.map((_, index) => {
     const url = `/${pathSnippets.slice(0, index + 1).join('/')}`;
+    if (!breadcrumbData[url]) return null;
     return (
       <Breadcrumb.Item key={url}>
         <Link to={url}>{breadcrumbData[url]}</Link>
