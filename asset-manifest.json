@@ -7,8 +7,8 @@
     "static/js/2.565c06fa.chunk.js": "/starter-boilerplate/static/js/2.565c06fa.chunk.js",
     "static/js/2.565c06fa.chunk.js.map": "/starter-boilerplate/static/js/2.565c06fa.chunk.js.map",
     "main.css": "/starter-boilerplate/static/css/main.74e82f7d.chunk.css",
-    "main.js": "/starter-boilerplate/static/js/main.13e4481c.chunk.js",
-    "main.js.map": "/starter-boilerplate/static/js/main.13e4481c.chunk.js.map",
+    "main.js": "/starter-boilerplate/static/js/main.ec8f45d8.chunk.js",
+    "main.js.map": "/starter-boilerplate/static/js/main.ec8f45d8.chunk.js.map",
     "runtime-main.js": "/starter-boilerplate/static/js/runtime-main.8252f424.js",
     "runtime-main.js.map": "/starter-boilerplate/static/js/runtime-main.8252f424.js.map",
     "static/js/5.676b9945.chunk.js": "/starter-boilerplate/static/js/5.676b9945.chunk.js",
@@ -52,6 +52,6 @@
     "static/js/runtime-main.8252f424.js",
     "static/js/5.676b9945.chunk.js",
     "static/css/main.74e82f7d.chunk.css",
-    "static/js/main.13e4481c.chunk.js"
+    "static/js/main.ec8f45d8.chunk.js"
   ]
 }
